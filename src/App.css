@@ -1,0 +1,44 @@
+
+
+
+  .scrolling-headings {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    
+    width: 100vw;
+    height: 40px;
+  }
+
+  .heading-container {
+    display: flex;
+    gap: 100px; /* Ensures equal spacing between headings */
+    position: absolute;
+    animation: scroll-headings 10s linear infinite;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    white-space: nowrap;
+  }
+  #lead-form {
+    width: 50rem;
+  }
+  #Contact-form {
+    width: 100%;
+  }
+
+  .icon {
+    margin-left: 10px;
+  }
+
+  @keyframes scroll-headings {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
